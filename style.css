@@ -11,19 +11,14 @@ body {
   font-size: 14px;
   background-color: var(--grey-900);
   display: flex;
+  padding-inline: 1rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-
-body {
-    margin: auto;
-    overflow: auto;
-    background: linear-gradient(315deg, hsl(0, 0%, 20%) 3%, hsl(0, 0%, 12%) 38%, hsl(0, 0%, 8%) 68%, hsl(75, 94%, 57%) 98%);
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
+  background: linear-gradient(315deg, hsl(0, 0%, 20%) 3%, hsl(0, 0%, 12%) 38%, hsl(0, 0%, 8%) 68%, hsl(75, 94%, 57%) 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
 }
 
 @keyframes gradient {
@@ -89,11 +84,15 @@ body {
 .main__card {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  max-width: 25rem;
+  width: 100%;
+  padding-inline: 1rem;
   background-color: var(--grey-800);
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 0.7rem;
+  text-align:center;
 }
 
 .card__top {
@@ -136,11 +135,10 @@ body {
 }
 
 .card__bottom {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 0.8rem;
+  align-self: stretch;
 }
 
 .bottom__btn {
@@ -149,7 +147,6 @@ body {
   color: var(--white);
   font-weight: 400;
   width: 90%;
-  text-align: center;
   padding: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -161,26 +158,4 @@ body {
   font-size: 1.1rem;
   scale: 1.03;
   box-shadow: -3px 3px 1px hsl(0, 0%, 8%);
-}
-
-@media (min-width: 375px) and (max-width: 424px) {
-  .main__card {
-    width: 90vw;
-  }
-}
-
-@media (min-width: 425px) and (max-width: 769px) {
-  .main__card {
-    width: 70vw;
-  }
-}
-@media (min-width: 770px) and (max-width: 1024px) {
-  .main__card {
-    width: 50vw;
-  }
-}
-@media (min-width: 1025px) {
-  .main__card {
-    width: 30vw;
-  }
 }
